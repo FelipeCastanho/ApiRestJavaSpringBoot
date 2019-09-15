@@ -19,8 +19,7 @@ public class ApiRestJavaSpringBootApplication implements CommandLineRunner {
 	
 	@Override
 	public void run(String... args) throws Exception {
-		log.info(countDuplicatesModel.firstAlgorithm("a")+"");
-		log.info(countDuplicatesModel.firstAlgorithm("ab")+"");
+		
 		log.info(countDuplicatesModel.firstAlgorithm("abcde")+"");
 		log.info(countDuplicatesModel.firstAlgorithm("aabbcde")+"");
 		log.info(countDuplicatesModel.firstAlgorithm("aabBcde")+"");
@@ -28,6 +27,14 @@ public class ApiRestJavaSpringBootApplication implements CommandLineRunner {
 		log.info(countDuplicatesModel.firstAlgorithm("Indivisibilities")+"");
 		log.info(countDuplicatesModel.firstAlgorithm("aA11")+"");
 		log.info(countDuplicatesModel.firstAlgorithm("ABBA")+"");
+		log.info("-");
+		log.info(countDuplicatesModel.secondAlgorithm("abcde")+"");
+		log.info(countDuplicatesModel.secondAlgorithm("aabbcde")+"");
+		log.info(countDuplicatesModel.secondAlgorithm("aabBcde")+"");
+		log.info(countDuplicatesModel.secondAlgorithm("indivisibility")+"");
+		log.info(countDuplicatesModel.secondAlgorithm("Indivisibilities")+"");
+		log.info(countDuplicatesModel.secondAlgorithm("aA11")+"");
+		log.info(countDuplicatesModel.secondAlgorithm("ABBA")+"");
 	}
 	
 	public static void main(String[] args) {
